@@ -23,7 +23,7 @@ $$
 |---|---|---|
 | **全期間平均偏差** $E$ | $\displaystyle \left\|\frac1L\int_0^L\mathbf u(t)\,dt\right\|$ | 実験時間 $L$ 全体で向きがどれほど打ち消されるか |
 | **10秒窓最大偏差** $W_{10}$ | $\displaystyle \max_{10\le t\le L}\left\|\frac1{10}\int_{t-10}^t\mathbf u(s)\,ds\right\|$ | 途中の**どの10秒間**にも大きな偏りがないか |
-| **球面方向分布のTVD** | $\displaystyle \frac12\sum_{i=1}^{288}\left|p_i-\frac1{288}\right|$ | 球面288等面積区画への滞在割合 $p_i$ が均一か |
+| **球面方向分布のTVD** | $\displaystyle \frac{1}{2}\sum_{i=1}^{288}\lvert p_i-\frac{1}{288}\rvert$ | 球面288等面積区画への滞在割合 $p_i$ が均一か |
 | **回転加速度RMS** | $\displaystyle \sqrt{\frac1L\int_0^L\|\mathbf a_{\mathrm{rot}}(t)\|^2dt}$ | 回転によって生じる加速度。試料座標X方向1 cmで算出 |
 
 すべて**小さいほど良い**。$E,W_{10}$ は重力加速度 $g$ で正規化した無次元量。例えば $E=0.0026$ は**時間平均ベクトル**の大きさが $0.0026g$ 相当という意味で、瞬間的に $0.0026g$ になったという意味ではない。
